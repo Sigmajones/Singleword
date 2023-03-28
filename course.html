@@ -69,17 +69,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 ]
             });
         });
-   dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+   
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
-  event: "view_item_list",
+  event: "view_item",
   ecommerce: {
-    items: [
-     {
+	  currency: "USD",
+  value: 7.77,
+  items: [
+    {
       item_id: "SKU_12345",
-      item_name: "Python",
+      item_name: "Stan and Friends Tee",
       affiliation: "Google Merchandise Store",
       coupon: "SUMMER_FUN",
-      currency: "INR",
       discount: 2.22,
       index: 0,
       item_brand: "Google",
@@ -92,32 +94,10 @@ dataLayer.push({
       item_list_name: "Related Products",
       item_variant: "green",
       location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-      price: 1000,
+      price: 9.99,
       quantity: 1
-    },
-    {
-      item_id: "SKU_12346",
-      item_name: "AI",
-      affiliation: "Google Merchandise Store",
-      coupon: "SUMMER_FUN",
-      currency: "INR",
-      discount: 300,
-      index: 1,
-      item_brand: "Google",
-      item_category: "Apparel",
-      item_category2: "Adult",
-      item_category3: "Shirts",
-      item_category4: "Crew",
-      item_category5: "Short sleeve",
-      item_list_id: "related_products",
-      item_list_name: "Related Products",
-      item_variant: "gray",
-      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-      price: 1500,
-      promotion_id: "P_12345",
-      promotion_name: "Summer Sale",
-      quantity: 1
-    }]
+    }
+  ]
   }
 });
 	    dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
@@ -223,7 +203,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </p>
 
 &emsp;  &emsp;  &emsp;  &emsp;  <button id="btncart1"><a href="cart.html" id="btncart12" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
-<button type="button" style="font: bold 24px  Arial; color:green;"><a href="sucess.html">Purchase</a></button><br />
+<button type="button" style="font: bold 24px  Arial; color:green;"><a href="success.html">Purchase</a></button><br />
 </br></br>
 <p>
 &emsp;  &emsp;  <img src="2.jfif" width="500" height="200">
