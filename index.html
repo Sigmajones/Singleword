@@ -64,6 +64,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 ]
             });
         });
+	    function myFunction() {
+	    dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "purchase",
+  ecommerce: {
+	  item_id: "JOnes_09",
+	  item_name: "Python",
+	  affiliation: "JOnes MERchandise Store",
+	  currency:"USD"
+  }
+});
+}
+	    function myFunction2() {
+	    dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "purchase",
+  ecommerce: {
+	  item_id: "JOnes_09_2",
+	  item_name: "WEB Analytics",
+	  affiliation: "JOnes MERchandise Store",
+	  currency:"USD"
+  }
+});
+}
 	    </script>
 	
     <title>Course Page</title>
@@ -108,15 +132,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 &emsp;  &emsp;  <img src="img/1.jpg" width="500" height="200">
 </p>
 
-&emsp;  &emsp;  &emsp;  &emsp;  <button><a href="cart.html" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
-<button type="button" style="font: bold 24px  Arial; color:green;"><a href="sucess.html">Purchase</a></button><br />
+&emsp;  &emsp;  &emsp;  &emsp;  <button><a href="#" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
+<button type="button"onclick= "myfunction()" style="font: bold 24px  Arial; color:green;"><a href="sucess.html">Purchase</a></button><br />
 </br></br>
 <p>
 &emsp;  &emsp;  <img src="img/2.jpg" width="500" height="200">
 </p>
 
-&emsp;  &emsp;  &emsp;  &emsp;  <button><a href="cart.html" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
-<button type="button" style="font: bold 24px  Arial; color:green;"><a href="sucess.html">Purchase</a></button><br />
+&emsp;  &emsp;  &emsp;  &emsp;  <button><a href="#" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
+<button type="button" onclick= "myfunction2()" style="font: bold 24px  Arial; color:green;"><a href="sucess.html">Purchase</a></button><br />
 
 </body>
 
